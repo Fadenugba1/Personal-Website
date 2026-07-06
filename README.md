@@ -8,17 +8,53 @@ No frameworks, no build step, no dependencies — plain HTML/CSS/JS.
 
 ## Editing content
 
-**Everything on the page renders from [`js/data.js`](js/data.js).** Open it and edit the `SITE` object:
+**Everything on the page renders from [`js/data.js`](js/data.js)** — no HTML or CSS to touch.
+Open it, edit the `SITE` object, save, refresh. Order on the page = order in the array.
 
-- **Links** (`links`) — add any social/profile link on demand:
-  ```js
-  { label: "X (Twitter)", handle: "@yourhandle", url: "https://x.com/yourhandle" },
-  ```
-- **Experience** (`work`) — entries with `year`, `org`, `role`, `description`, `tags`, optional `url`.
-- **Projects** (`projects`) — entries with `title`, `description`, `tags`, `url`.
-- **Header info** — `name`, `tagline`, `status`, `location`, `email`, `currently`.
+### Add a project
 
-Commented-out template entries in `data.js` show the exact shape to copy.
+Copy this shape into the `projects: [...]` array:
+
+```js
+{
+  title: "My New Project",
+  description: "One or two sentences about what it does and what you built.",
+  tags: ["Python", "Machine Learning"],
+  url: "https://github.com/Fadenugba1/my-new-project", // or null for no link
+},
+```
+
+### Add experience
+
+Copy this into the `work: [...]` array (a commented-out template is already there):
+
+```js
+{
+  year: "2026",
+  org: "Company Name",
+  role: "Software Engineering Intern",
+  description: "What you did and what you learned.",
+  tags: ["Java", "AWS"],
+  url: "https://company.com", // optional — makes the name clickable
+},
+```
+
+The "2026 — 2026" year range next to *Selected Work* updates itself from the years you enter.
+
+### Add a link (footer "Elsewhere" section)
+
+Copy this into the `links: [...]` array:
+
+```js
+{ label: "X (Twitter)", handle: "@yourhandle", url: "https://x.com/yourhandle" },
+```
+
+### Header info
+
+`name`, `tagline`, `status`, `location`, `email` and `currently` (role, university, focus tags)
+are plain fields at the top of the same file.
+
+Once GitHub Pages is enabled, pushing the edited `data.js` to `main` updates the live site.
 
 ## Running locally
 
