@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folabomi Adenugba — Student and Developer</title>
+  <meta name="description" content="Personal website of Folabomi Adenugba — student building machine learning systems and quantitative trading strategies." />
+  <meta property="og:title" content="Folabomi Adenugba" />
+  <meta property="og:description" content="Student building machine learning systems and quantitative trading strategies." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,38 78,92 22,92 5,38' fill='%2300c0fc'/></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg-pentagons" aria-hidden="true"></canvas>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <div class="page">
+    <nav class="topnav" aria-label="Top">
+      <span class="label"><a href="#top">Portfolio</a></span>
+      <span class="label" id="nav-year"></span>
+    </nav>
+
+    <header class="hero" id="top">
+      <h1 id="hero-name"></h1>
+      <p class="tagline" id="hero-tagline"></p>
+      <p class="meta">
+        <span class="pulse" aria-hidden="true"></span>
+        <span id="hero-status"></span>
+        <span class="dot" aria-hidden="true"></span>
+        <span id="hero-location"></span>
+      </p>
+    </header>
+
+    <main>
+      <section class="currently" id="currently">
+        <div class="section-head">
+          <span class="label">Currently</span>
+        </div>
+        <div class="currently-row">
+          <p class="currently-role">
+            <span id="currently-role"></span>
+            <span class="at">@ <span id="currently-org"></span></span>
+          </p>
+          <span class="currently-dates" id="currently-dates"></span>
+        </div>
+        <span class="label">Focus</span>
+        <ul class="tags" id="currently-focus"></ul>
+      </section>
+
+      <section id="work">
+        <div class="section-head">
+          <h2 id="work-heading"></h2>
+          <span class="label" id="work-range"></span>
+        </div>
+        <ul class="entries" id="work-list"></ul>
+      </section>
+
+      <section id="projects">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <span class="label">Selected Work</span>
+        </div>
+        <ul class="entries" id="project-list"></ul>
+      </section>
+
+      <section class="connect" id="connect">
+        <div class="section-head">
+          <h2 id="connect-heading"></h2>
+        </div>
+        <p id="connect-blurb"></p>
+        <a class="cta" id="connect-cta" href="#"></a>
+      </section>
+    </main>
+
+    <footer>
+      <span class="label">Elsewhere</span>
+      <ul class="elsewhere" id="elsewhere-list"></ul>
+      <div class="footer-meta">
+        <span id="footer-copy"></span>
+        <span>Built with vanilla JS &amp; pentagons</span>
+      </div>
+    </footer>
+  </div>
+
+  <noscript>
+    <div style="position:relative;z-index:3;max-width:44rem;margin:0 auto;padding:2rem 1.5rem;color:#e8ecef;font-family:sans-serif;">
+      <h1>Folabomi Adenugba</h1>
+      <p>Student building machine learning systems and quantitative trading strategies.</p>
+      <p>
+        <a style="color:#00c0fc" href="https://github.com/Fadenugba1">GitHub</a> ·
+        <a style="color:#00c0fc" href="https://www.linkedin.com/in/folabomi-adenugba-23912a283/">LinkedIn</a> ·
+        <a style="color:#00c0fc" href="mailto:folabomiadenugba@gmail.com">Email</a>
+      </p>
+    </div>
+  </noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pentagons.js"></script>
+</body>
+</html>
